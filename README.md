@@ -1,7 +1,7 @@
 # Gammanetworks
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
-Run npm install before starting the server.
+Run npm install and npm run build before starting the server.
 
 ## Development server
 
