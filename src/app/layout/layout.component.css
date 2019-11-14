@@ -1,0 +1,41 @@
+.Rectangle-2 {
+  margin-left: 17.2%;
+  margin-right: 17.2%;
+  margin-top: 3.8%;
+  height: 520px;
+  border-radius: 2px;
+  box-shadow: 0 10px 20px 0 rgba(210, 210, 210, 0.5);
+  background-color: #ffffff;
+}
+
+.Rectangle-1 {
+  margin-left: 17.2%;
+  margin-top: 3.8%;
+  margin-right: 17.2%;
+  display: flex;
+  justify-content: center;
+}
+
+.body-image {
+  /* display: flex;
+  justify-content: center; */
+}
+
+.bi {
+  width: 718px;
+  height: 424px;
+  padding-left: 10%;
+  object-fit: contain;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dynamic {
+  display: flex;
+  width: 18.8%;
+  justify-content: space-between;
+  align-items: center;
+}

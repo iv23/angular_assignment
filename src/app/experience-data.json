@@ -1,0 +1,20 @@
+[
+  {
+    "company":"Microsoft",
+    "title":"Sr. Front End Developer",
+    "location":"Gurugram",
+    "desc":"Development of apps, games and websites using PHP, HTML5, CSS3, Javascript, Jquery, AngularJS, Bootstrap.",
+    "from":"Jul 2016",
+    "till":"Jun 2018",
+    "username":"john"
+  },
+  {
+    "company":"Nagarro",
+    "title":"Junior Associate",
+    "location":"Gurugram",
+    "desc":"Development of e-commerce website using Java, JSP, jQuery, HTML5, CSS3.",
+    "from":"Jul 2018",
+    "till":"Nov 2019",
+    "username":"ishaan"
+  }
+]

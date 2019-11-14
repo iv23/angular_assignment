@@ -1,0 +1,66 @@
+<div class="Rectangle-1">
+  <app-header></app-header>
+</div>
+
+<div class="Rectangle-2">
+  <div class="container">
+    <div class="dynamic">
+      <div class="vertical">
+        <div class="form-container">
+          <div class="form-header">
+            <h2>
+              {{ customForm.formHeader }}
+            </h2>
+          </div>
+          <form
+            class="customForm"
+            [formGroup]="customForm.fg"
+            (ngSubmit)="onSubmit()"
+          >
+            <mat-form-field
+              *ngFor="let field of customForm.fields"
+              class="example-full-width"
+            >
+              <input
+                matInput
+                [placeholder]="field.placeHolder"
+                [type]="field.type"
+                [formControlName]="field.formControlName"
+              />
+            </mat-form-field>
+            <div class="button-container">
+              <button type="submit" class="submit-button">
+                {{ customForm.formSubmit }}
+              </button>
+            </div>
+          </form>
+        </div>
+        <div *ngIf="customForm.redirectTitle === 'SIGN IN'">
+        <div class="redirect">
+          <span
+            >{{ customForm.redirectMsg }} &nbsp;<a
+              class="redirect-link"
+              (click)="redirectTo()"
+              >{{ customForm.redirectTitle }}</a
+            ></span
+          >
+        </div>
+      </div>
+      <div *ngIf="customForm.redirectTitle === 'SIGN UP'">
+          <div class="redirect" style="padding-top: 60px;">
+            <span
+              >{{ customForm.redirectMsg }} &nbsp;<a
+                class="redirect-link"
+                (click)="redirectTo()"
+                >{{ customForm.redirectTitle }}</a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body-image">
+      <img srcset="assets/img/body-image.png, assets/img/bi2x.png" class="bi" />
+    </div>
+  </div>
+</div>

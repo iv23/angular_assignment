@@ -1,0 +1,33 @@
+<div class="exp-page">
+  <div class="exp-header">
+    <img src="assets/img/exp-header.svg" class="exp-header-img" />
+  </div>
+  <div class="exp-tbl-flex">
+    <div class="exp-tbl-container">
+      <div class="exp-table-header">
+        <div class="heading">WORK EXPERIENCE</div>
+        <div class="username">{{ username }}</div>
+      </div>
+      <div class="exp-table-content">
+        <table>
+          <tr class="tbl-header">
+            <th>Company</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th nowrap>Month/Year-Month/Year</th>
+            <th>Description</th>
+          </tr>
+          <tr class="tbl-content" *ngIf="expData">
+              <td>{{ expData.company }}</td>
+              <td nowrap>{{ expData.title }}</td>
+              <td>{{ expData.location }}</td>
+              <td>{{ expData.from }} - {{ expData.till }}</td>
+              <td>{{ expData.desc }}</td>
+          </tr>
+        </table>
+        <button class="add">+ ADD</button>
+      </div>
+
+    </div>
+  </div>
+</div>
