@@ -1,5 +1,48 @@
+.Rectangle-1 {
+  margin-left: 17.2%;
+  margin-top: 3.8%;
+  margin-right: 17.2%;
+  display: flex;
+  justify-content: center;
+}
+
+.Rectangle-2 {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3.8%;
+  margin-bottom: 12.5%;
+  padding: 2%;
+  display: flex;
+  flex-grow: 2;
+  overflow: hidden;
+  /* flex-wrap: wrap; */
+  height: 520px;
+  border-radius: 2px;
+  box-shadow: 0 10px 20px 0 rgba(210, 210, 210, 0.5);
+  background-color: #ffffff;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dynamic {
+  display: flex;
+  margin-left: 8%;
+  margin-top: 5%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
 form {
-  width: 351px;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -28,6 +71,7 @@ form {
 }
 
 .redirect {
+  white-space: nowrap;
   margin-top: 25%;
   color: #8c949c;
   font-family: Roboto;
@@ -46,49 +90,32 @@ form {
   color: #23c994;
 }
 
-.Rectangle-2 {
-  margin-left: 17.2%;
-  margin-right: 17.2%;
-  margin-top: 3.8%;
-  padding: 2%;
-  height: 520px;
-  border-radius: 2px;
-  box-shadow: 0 10px 20px 0 rgba(210, 210, 210, 0.5);
-  background-color: #ffffff;
-}
-
-.Rectangle-1 {
-  margin-left: 17.2%;
-  margin-top: 3.8%;
-  margin-right: 17.2%;
-  display: flex;
-  justify-content: center;
-}
-
 .bi {
-  width: 718px;
+  width: auto;
   height: 424px;
-  margin-top: 50px;
-  padding-left: 10%;
+  margin-top: 5%;
+  padding-left: 5%;
   object-fit: contain;
 }
 
-.container {
-  display: flex;
-  justify-content: space-evenly;
+.body-image {
+  /* overflow: hidden; */
+  display: inline-block;
+  grid-column-start: 6;
 }
 
-.dynamic {
-  display: flex;
-  width: 18.8%;
-  /* /* flex-direction: column; */
-  justify-content: space-between;
-  align-items: center;
+@media only screen and (min-width: 1530px){
+  .Rectangle-2 {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
 }
 
-.vertical {
-  display: flex;
-  flex-direction: column;
+@media only screen and (min-width: 1540px) and (max-width: 2050px){
+  .Rectangle-2 {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
 }
-
-
